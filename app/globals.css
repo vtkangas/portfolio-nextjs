@@ -11,3 +11,19 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
+.header {
+  font-family: var(--font-lato), sans-serif;
+}
+
+.text {
+  font-family: var(--font-roboto-flex), sans-serif;
+}
+
+.text-shadow {
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
