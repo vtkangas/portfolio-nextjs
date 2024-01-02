@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div className="grid grid-row gap-4 place-content-center min-h-full w-full bg-[#87fffb] text-gray-900 text-4xl py-20 px-[5vw]">
       <div className="grid grid-row gap-4 text-center">
-        <h1 className="relative header text-4xl lg:text-7xl text-white font-semibold text-shadow drop-shadow-[4px_4px_0_rgba(0,0,0,1)]">
+        <h1 className="relative uppercase header text-4xl lg:text-7xl text-white font-semibold text-shadow drop-shadow-[4px_4px_0_rgba(0,0,0,1)]">
           Projects
         </h1>
 
