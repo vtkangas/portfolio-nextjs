@@ -1,11 +1,10 @@
 import "./globals.css";
 import Landing from "@/components/Landing";
 import Projects from "@/components/Projects";
-import Section from "@/components/Section";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-gradient-to-b from-slate-950 to-[#212d42ff]">
       <Landing />
       <Projects />
     </main>
