@@ -6,7 +6,7 @@ export const projects: Project[] = [
     image: "beach.jpg",
     description:
       "Responsive portfolio site with neat parallax scrolling details. Built with Next.js and Tailwind CSS.",
-    tech: ["React", "Nextjs", "Tailwin CSS", "DaisyUi", "Typescript"],
+    tech: ["React", "Nextjs", "Tailwin CSS", "DaisyUi", "Framer-motion"],
     links: [
       { label: "Website", url: "https://example.com/project2" },
       { label: "GitHub", url: "https://github.com/example/project1" },
@@ -14,18 +14,14 @@ export const projects: Project[] = [
   },
   {
     header: "Movie database",
-    image: "beach.jpg",
+    image: "movieDb.png",
     description:
       "Moviedatabase created with Nextjs, Tailwindcss and daisyUi component library. And for the backend: MongoDB for moviedata, supabase for user managment and tmdb-API for images.",
     tech: [
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "DaisyUi",
+      "React (Next.js)",
+      "TailwindCSS",
       "MongoDB",
       "Supabase",
-      "Supabase Auth",
-      "Typescript",
     ],
     links: [
       { label: "Demo", url: "https://example.com/demo" },
@@ -37,7 +33,7 @@ export const projects: Project[] = [
     image: "beach.jpg",
     description:
       "This is fun one. Created this simple endless runner game with Unity and C#. Did the graphics my self also. I made this game back in 2021 (I think) for learning some basics of unity. I returned to this project in the summer of 2023 when I made the music for the gameplay.",
-    tech: ["Javascript", "React", "MaterialUI"],
+    tech: ["C#", "Unity", ],
     links: [{ label: "Video", url: "https://example.com/project2" }],
   },
   {

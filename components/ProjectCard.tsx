@@ -8,39 +8,37 @@ interface Props {
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <div className='relative h-auto max-w-sm rounded-2xl border-solid border-2 border-black'>
-      {/* shadow */}
-      <div className='absolute top-0 -right-3 z-10 w-[102%] h-[103%] rounded-[2rem] rounded-br-3xl bg-black'/>
-      <div className="card p-3 z-20 rounded-2xl border-solid border-2 border-base-100 h-full w-full bg-base-100 text-black">
-        <figure className="overflow-hidden w-full">    
-          <Image
-            src={`/images/${project.image}`}
-            width={500}
-            height={500}        
-            sizes="100vh"
-            style={{ width: '100%', height: 'auto' }}
-            alt={project.header}
-          />
-        </figure>
+    <div className="card rounded-none h-auto max-w-sm bg-base-100 text-black">
+      <figure className="overflow-hidden w-full">    
+      <Image
+          src={`/images/${project.image}`}
+          width={0}
+          height={0}        
+          sizes="100vh"
+          style={{ width: '100%', height: 'auto' }}
+          alt={project.header}
+        />
+      </figure>
 
-        <div className="card-body p-6">
-          <h2 className="card-title text-3xl">{project.header}</h2>
-          <p className="text-base">{project.description}</p>
-          <ul >
-            {project.tech.map((tech, techIndex) => (
-              <li className="badge badge-neutral mr-2" key={techIndex}>{tech}</li>
-            ))}
-          </ul>
-          
-          <div className="card-actions justify-center">
-            {project.links.map((link, linkIndex) => (
-              <Link key={linkIndex} href={link.url} target="_blank" rel="noopener noreferrer">
-                <button className="btn btn-primary">{link.label}</button>
-              </Link>
-            ))}
-          </div>
+      <div className="card-body p-6">
+        <h2 className="card-title">{project.header}</h2>
+        <p className="text-sm">{project.description}</p>
+        <ul className="flex flex-wrap gap-1 content-start justify-start h-fit mt-2">
+          {project.tech.map((tech, techIndex) => (
+            <li className="badge text-sm font-medium border-none text-center inline-block bg-indigo-400 text-white" key={techIndex}>{tech}</li>
+          ))}
+        </ul>
+        
+        <div className="card-actions grid grid-cols-2 mt-2">
+          {project.links.map((link, linkIndex) => (
+            <Link key={linkIndex} href={link.url} target="_blank" rel="noopener noreferrer" className="btn border-2 border-indigo-400 rounded-lg text-center text-sm text-indigo-800 bg-white">
+              {link.label}
+            </Link>
+          ))}
         </div>
       </div>
     </div>
+
+
   )
 }
