@@ -4,10 +4,14 @@ import Landing from "@/components/Landing";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Stars from "@/components/stars/Stars";
+
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-b from-slate-950 to-[#212d42ff] overflow-hidden">
+    <main className="overflow-hidden">
+      <Stars />
+      
       <Landing />
       <About />
       <Projects />

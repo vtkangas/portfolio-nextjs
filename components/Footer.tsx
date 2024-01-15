@@ -1,7 +1,7 @@
-import glow from "@/public/images/view/earth/glow.svg"
-import backHill from "@/public/images/view/backHill.svg"
-import frontHill from "@/public/images/view/frontHill.svg"
-import foreground from "@/public/images/view/foreground.svg"
+import glow from "@/public/images/view/earth/glow.svg";
+import backHill from "@/public/images/view/backHill.svg";
+import frontHill from "@/public/images/view/frontHill.svg";
+import foreground from "@/public/images/view/foreground.svg";
 import Image from "next/image";
 
 export default function Footer() {
@@ -18,7 +18,7 @@ export default function Footer() {
           />
         </div>
         <div className="w-full h-full">
-        <Image
+          <Image
             priority
             src={frontHill}
             alt="hill illustration"
@@ -33,12 +33,12 @@ export default function Footer() {
             src={foreground}
             alt="land"
             className="absolute w-full h-auto bottom-0"
-          /> 
+          />
         </div>
       </div>
       <div className="relative bg-[#b3998aff] w-screen max-w-full h-fit p-5 z-20">
         <p className="text-white">© 2024 Ville Kangas</p>
       </div>
     </div>
-  )
+  );
 }

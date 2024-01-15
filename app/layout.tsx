@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Barlow } from 'next/font/google'
 import './globals.css'
+import Navbar from '@/components/Navbar';
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", });
+const barlow = Barlow({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900" ], variable: "--font-barlow", });
 
 export const metadata: Metadata = {
   title: 'Ville Kangas',
@@ -15,8 +16,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${inter.className}`}>
+    <html lang="en" className={`${barlow.className}`}>
       <body>
+        <Navbar />
         {children}
       </body>
     </html>
