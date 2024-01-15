@@ -17,12 +17,12 @@ export default function Me() {
         </p>
       </div>
       <div className="grid sm:col-span-1 justify-items-center sm:justify-items-end">
-        <div className="w-4/5 max-w-smd">
+        <div className="w-4/5 max-w-sm">
           <Image
             priority
             src={me}
             alt="Meikäläinen"
-            className="mask mask-squircle object-bottom rounded-[10%] rotate-3 w-auto h-full"
+            className="mask mask-squircle object-bottom rounded-[10%] rotate-3 w-full h-auto"
           />
         </div>
       </div>
