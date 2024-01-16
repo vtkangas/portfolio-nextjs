@@ -6,12 +6,11 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Stars from "@/components/stars/Stars";
 
-
 export default function Home() {
   return (
     <main className="overflow-hidden">
       <Stars />
-      
+
       <Landing />
       <About />
       <Projects />

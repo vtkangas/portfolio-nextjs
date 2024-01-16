@@ -41,7 +41,7 @@ export default function ProjectCard({ project }: Props) {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn border-2 border-indigo-400 rounded-lg text-center text-sm text-indigo-800 bg-white"
+              className="btn rounded-lg text-center text-sm text-indigo-800 bg-white"
             >
               {link.label}
             </Link>

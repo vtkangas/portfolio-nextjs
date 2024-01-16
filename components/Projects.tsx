@@ -9,12 +9,12 @@ export default function Projects() {
     >
       <div className="max-w-5xl flex flex-col gap-8">
         <div className="flex flex-col gap-4 text-center">
-          <h1 className="uppercase text-4xl sm:text-5xl text-white font-bold text-outlines drop-shadow-[4px_4px_0_rgba(0,0,0,1)]">
+          <h1 className="uppercase text-5xl sm:text-7xl text-white font-bold text-outlines drop-shadow-[4px_4px_0_rgba(0,0,0,1)]">
             Projektit
           </h1>
 
           <p>
-            Tässä muutamia projekteja, joita olen tehnyt opintojeni aikana
+            Tässä projekteja, joita olen tehnyt opintojeni aikana
             2020-2023.
           </p>
         </div>

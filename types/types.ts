@@ -1,3 +1,8 @@
+export interface AboutData {
+  description: string;
+}
+
+
 export interface Project {
   header: string;
   image: string;
@@ -9,7 +14,8 @@ export interface Project {
   }[];
 }
 
-export interface NavLink {
+export interface ContactLink {
+  title: string,
   label: string;
   url: string;
 }

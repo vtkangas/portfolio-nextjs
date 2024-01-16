@@ -1,4 +1,14 @@
-import { NavLink, Project } from "@/types/types";
+import { AboutData, Project, ContactLink } from "@/types/types";
+
+export const aboutData: AboutData = {
+  description: `Olen IT-tradenomi opiskelija Oulusta. Opiskelen viimeistä vuotta
+  Mikkelin ammattikorkeakoulussa tietojenkäsittelyn tradenomiksi ja
+  suoritan tutkintoa verkkototeutuksella Oulusta käsin. Tällä hetkellä
+  osaamiseni pitää sisällään mm. seuraavia
+  teknologioita: Typescript, React (Nextjs), HTML + CSS. Aikaisemman
+  koulutukseni ansiosta minulla on myös Audiovisuaalista osaamista ja
+  näkemystä, josta on hyötyä frontend-devauksessa.`,
+};
 
 export const projects: Project[] = [
   {
@@ -17,12 +27,7 @@ export const projects: Project[] = [
     image: "movieDb.png",
     description:
       "Moviedatabase created with Nextjs, Tailwindcss and daisyUi component library. And for the backend: MongoDB for moviedata, supabase for user managment and tmdb-API for images.",
-    tech: [
-      "React (Next.js)",
-      "TailwindCSS",
-      "MongoDB",
-      "Supabase",
-    ],
+    tech: ["React (Next.js)", "TailwindCSS", "MongoDB", "Supabase"],
     links: [
       { label: "Demo", url: "https://example.com/demo" },
       { label: "GitHub", url: "https://github.com/example/project1" },
@@ -33,7 +38,7 @@ export const projects: Project[] = [
     image: "beach.jpg",
     description:
       "This is fun one. Created this simple endless runner game with Unity and C#. Did the graphics my self also. I made this game back in 2021 (I think) for learning some basics of unity. I returned to this project in the summer of 2023 when I made the music for the gameplay.",
-    tech: ["C#", "Unity", ],
+    tech: ["C#", "Unity"],
     links: [{ label: "Video", url: "https://example.com/project2" }],
   },
   {
@@ -52,24 +57,23 @@ export const projects: Project[] = [
     tech: ["Javascript", "React", "MaterialUI"],
     links: [{ label: "Github", url: "https://example.com/project2" }],
   },
-  // Add more projects as needed
 ];
 
-export const links: NavLink[] = [
+export const contactLinks: ContactLink[] = [
   {
-    label: "Home",
-    url: "#home",
+    title: "vtkangas@outlook.com",
+    label: "vtkangas@outlook.com",
+    url: "mailto:vtkangas@outlook.com",
   },
   {
-    label: "About",
-    url: "#about",
+    title: "linkedin.com/in/ville-kangas-2b4400260",
+    label: "LinkedIn",
+    url: "https://linkedin.com/in/ville-kangas-2b4400260",
   },
   {
-    label: "Projects",
-    url: "#projects",
-  },
-  {
-    label: "Contact",
-    url: "#contact",
+    title: "github.com/vtkangas",
+    label: "GitHub",
+    url: "https://github.com/vtkangas",
   },
 ];
+

@@ -1,31 +1,46 @@
+'use client'
+
 import Link from "next/link";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+import { contactLinks } from "@/lib/data";
+import { ContactLink } from "@/types/types";
+
 
 export default function Contact() {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.33 1"],
+  });
+  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
   return (
     <div
       id={"contact"}
-      className="relative flex justify-center w-screen max-w-full h-screen py-20 px-[5vw]"
+      className="absolute flex justify-center w-screen max-w-full h-screen py-20 px-[5vw] z-10"
     >
-      <div className="flex flex-col gap-8 justify-center items-center text-center text-white max-w-5xl h-full">
+      <motion.div
+        ref={ref}
+        style={{
+          opacity: opacityProgess,
+        }}
+        className="flex flex-col gap-8 justify-center items-center text-center text-white max-w-5xl h-full"
+      >
         <h1 className="uppercase text-4xl sm:text-5xl font-bold">
           Yhteystiedot
         </h1>
         <ul className="flex flex-col gap-4">
-          <li>
-            <Link href={"mailto:vtkangas@outlook.com"}>
-              vt.kangas@outlook.com
-            </Link>
-          </li>
-          <li>
-            <Link href={"tel:+358408450826"}>0408450826</Link>
-          </li>
-          <li>
-            <Link href={"www.linkedin.com/in/ville-kangas-2b4400260"}>
-              linkedIn
-            </Link>
-          </li>
+          {contactLinks.map((link: ContactLink) => (
+            <li key={link.label}>
+              <Link href={link.url} target="_blank" rel="noopener noreferrer" title={link.title}>
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
-      </div>
+      </motion.div>
     </div>
   );
 }
