@@ -14,7 +14,7 @@ export default function Landing() {
   });
 
   const moonY = useTransform(scrollYProgress, [0, 1], ["10%", "80%"]);
-  const earthY = useTransform(scrollYProgress, [0, 1], ["20%", "-50%"]);
+  const earthY = useTransform(scrollYProgress, [0, 1], ["40%", "-10%"]);
 
   return (
     <div

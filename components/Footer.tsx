@@ -11,7 +11,7 @@ export default function Footer() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "0.8 end"],
+    offset: ["start start", "0.5 end"],
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [1, 1.9]);
 

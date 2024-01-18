@@ -4,11 +4,11 @@ import { aboutData } from "@/lib/data";
 
 export default function Me() {
   return (
-    <div className="grid grid-rows-2 sm:grid-rows-none sm:grid-cols-3 max-w-5xl px-[5vw]">
-      <div className="grid sm:col-span-2 text-left justify-end place-items-center">
+    <div className="grid grid-rows-1 sm:grid-rows-none sm:grid-cols-3 max-w-5xl px-[5vw]">
+      <div className="grid row-span-1 sm:col-span-2 items-center text-left">
         <p>{aboutData.description}</p>
       </div>
-      <div className="grid sm:col-span-1 justify-items-center sm:justify-items-start order-last sm:order-first">
+      <div className="grid sm:col-span-1 order-last sm:order-first">
         <div className="w-4/5 max-w-sm">
           <Image
             priority
