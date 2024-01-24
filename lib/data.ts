@@ -5,9 +5,7 @@ export const aboutData: AboutData = {
   Mikkelin ammattikorkeakoulussa tietojenkäsittelyn tradenomiksi ja
   suoritan tutkintoa verkkototeutuksella Oulusta käsin. Tällä hetkellä
   osaamiseni pitää sisällään mm. seuraavia
-  teknologioita: Typescript, React (Nextjs), HTML + CSS. Aikaisemman
-  koulutukseni ansiosta minulla on myös Audiovisuaalista osaamista ja
-  näkemystä, josta olen kokenut olevan hyötyä frontend -puolella.`,
+  teknologioita: Typescript, React (Nextjs), HTML + CSS.`,
 };
 
 export const projects: Project[] = [
@@ -15,10 +13,10 @@ export const projects: Project[] = [
     header: "Movie database",
     image: "movieDb.png",
     description:
-    "Elokuvatietokanta jonka tein Next.js:llä, Tailwind CSS:llä ja DaisyUI-komponenttikirjastolla. Backend puolella toimii MongoDB elokuvatietojen säilyttämiseen, Supabase käyttäjähallintaan ja TMDB-API kuvien hakemiseen.",
+      "Elokuvatietokanta jonka tein Next.js:llä, Tailwind CSS:llä ja DaisyUI-komponenttikirjastolla. Backend puolella toimii MongoDB elokuvatietojen säilyttämiseen, Supabase käyttäjähallintaan ja TMDB-API kuvien hakemiseen.",
     tech: ["React (Next.js)", "TailwindCSS", "MongoDB", "Supabase"],
     links: [
-      { label: "GitHub", url: "https://github.com/vtkangas/movie-database" },
+      { label: "GitHub", url: "https://github.com/vtkangas/nextjs-movie-database" },
     ],
   },
   {
@@ -28,14 +26,13 @@ export const projects: Project[] = [
       "Responsiivinen portfoliosivusto parallaxi-skrollausyksityiskohdilla. Rakennettu käyttäen Next.js:ää ja Tailwind CSS:ää.",
     tech: ["React", "Nextjs", "Tailwin CSS", "DaisyUi", "Framer-motion"],
     links: [
-      { label: "GitHub", url: "https://github.com/vtkangas/nextjs-portfolio" },
+      { label: "GitHub", url: "https://github.com/vtkangas/portfolio-nextjs" },
     ],
   },
   {
     header: "Endless Runner 2D",
     image: "runner2D.png",
-    description:
-      `Tein tämän pelin oppiakseni Unityn ja C# -perusteita. Tämä oli mielenkiintoinen projekti sillä tein myös pelin grafiikat itse. Palasin projektin pariin suorittaessani JAMK-ammattikorkeakoulun järjestämää "Music and Sound for Games" -kurssia ja lisäsin peliin myös musiikin.`,
+    description: `Tein tämän pelin oppiakseni Unityn ja C# -perusteita. Tämä oli mielenkiintoinen projekti sillä tein myös pelin grafiikat itse. Palasin projektin pariin suorittaessani JAMK-ammattikorkeakoulun järjestämää "Music and Sound for Games" -kurssia ja lisäsin peliin myös musiikin.`,
     tech: ["C#", "Unity"],
     links: [{ label: "Video", url: "https://youtu.be/7hW23yvc6Uw" }],
   },
@@ -45,7 +42,12 @@ export const projects: Project[] = [
     description:
       "Testiharjoitus, jossa pääsin tutustumaan testauksen perusteisiin käyttäen Robot Frameworkia end-to-end- ja savutestaukseen sekä Jest Frameworkia integraatio- ja yksikkötesteihin.",
     tech: ["Jest", "Robot framework"],
-    links: [{ label: "Github", url: "https://github.com/vtkangas/Testing-with-Robot-Framework-and-Jest" }],
+    links: [
+      {
+        label: "Github",
+        url: "https://github.com/vtkangas/Testing-with-Robot-Framework-and-Jest",
+      },
+    ],
   },
 ];
 
@@ -58,7 +60,7 @@ export const contactLinks: ContactLink[] = [
   {
     title: "linkedin.com/in/ville-kangas-2b4400260",
     label: "LinkedIn",
-    url: "https://linkedin.com/in/ville-kangas-2b4400260",
+    url: "https://linkedin.com/in/ville-kangas",
   },
   {
     title: "github.com/vtkangas",

@@ -5,11 +5,11 @@ export default function Projects() {
   return (
     <div
       id={"projects"}
-      className="relative flex place-content-center min-h-full w-screen max-w-full bg-[#1ef4a6] text-gray-900 py-20 px-[5vw] overflow-hidden"
-    >
+      className="relative flex place-content-center min-h-full w-screen max-w-full bg-rose-600/[0.9] text-white py-20 px-[5vw] overflow-hidden z-10"
+    >        
       <div className="max-w-5xl flex flex-col gap-8">
-        <div className="flex flex-col gap-4 text-center">
-          <h1 className="uppercase text-5xl sm:text-7xl text-white font-bold text-outlines drop-shadow-[4px_4px_0_rgba(0,0,0,1)]">
+        <div className="flex flex-col gap-2 text-center">
+          <h1 className="uppercase text-5xl sm:text-7xl text-white font-bold">
             Projektit
           </h1>
 

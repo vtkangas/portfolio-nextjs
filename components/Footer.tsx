@@ -22,7 +22,7 @@ export default function Footer() {
         style={{
           scale: scaleProgess,
         }}
-        className="sticky h-screen w-screen max-w-full"
+        className="relative h-screen w-screen max-w-full"
       >
         {/* hills  */}
         <div className="w-full h-full">
